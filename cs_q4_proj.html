@@ -1,0 +1,62 @@
+<!-- By Adam Walker -->
+<head>
+	<title>Virtual Rubik's Cube</title>
+	<script src="333class.js" type="text/javascript" defer> </script>
+	<script src="mainEverything.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+<!-- TITLE -->
+<div>
+	<h2 style="color:blue;">Virtual Rubik's Cube</h2>
+	<h4 style="color:red;">By Adam Walker</h4>
+	<input type="checkbox" id="is3d" checked="true">3D Render   </input>
+	<input type="checkbox" id="scrambleChk">Start Timed Solves</input>
+	<input type="button" id="resetTimes" value="Reset Times"> </input>
+</div>
+
+<br>
+<!-- CUBE -->
+<div style="width:380; height:425;">
+
+	<canvas id="cube"></canvas>
+
+	
+</div>
+
+<div id="timerDiv" style="position:relative; left:150px; width:175; text-align:center;">
+	<span id="timerLoc" style="font-size:20; font-weight:700; color:red; display:none">0.00</span>
+</div>
+
+<div>
+	<h4 id="BestAve">Best Solve: N/A
+	<br>Average: N/A</h4>
+</div>
+
+<div>
+	<!-- INSTRUCTIONS -->
+	<h3 style="font-weight:500">Instructions:</h3>
+	<h4 style="font-weight:200; font-family:'Courier New', Courier, monospace;">
+		I/K--R/R'&emsp;&emsp;E/D--L/L'&emsp;&emsp;J/F--U/U'&emsp;&emsp;H/G--F/F'&emsp;&emsp;S/L--D/D'<br>
+		O/W--B/B'&emsp;&emsp;U/R--u/u'&emsp;&emsp;Y/N--r/r'&emsp;&emsp;T/B--l/l'&emsp;&emsp;M/V--f/f'<br>
+		;/A--y/y'&emsp;&emsp;P/Q--z/z'&emsp;&emsp;//Z--x/x'</h4>
+	<h4 style="font-weight:500">Please note compatibility has only been tested with Chrome and Firefox.<br>
+	<a href="http://google.com/chrome/" target="_blank">Get Google Chrome.</a></h4>
+</div>
+
+</body>
+<!--
+//I/K R/R'
+//E/D L/L'
+//J/F U/U'
+//H/G F/F'
+//S/L D/D'
+//O/W B/B'
+//U/R u/u'
+//Y/N r/r'
+//T/B l/l'
+//M/V f/f'
+//;/A y/y'
+//P/Q z/z'
+////Z x/x'
+-->
